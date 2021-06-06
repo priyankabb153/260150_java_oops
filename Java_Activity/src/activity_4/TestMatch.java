@@ -5,7 +5,7 @@ public class TestMatch extends Match {
 	 //90 overs in ODI Match
 	
 	public double calculateRunRate() {
-		return (remaining_runs()/((90.0-getCurrentover())));
+		return (remaining_runs()/((90-getCurrentover())));
 	}
 	
 	public int remaining_runs()
@@ -18,7 +18,9 @@ public class TestMatch extends Match {
 	
 	public  int calculateBalls() {
 		int balls_bowled=6*(int)getCurrentover();
-		return 540-balls_bowled;
+		float value=getCurrentover()*10;
+		int v=(int)value%10;
+		return 540-(balls_bowled+v);
 		
 	}
 	
