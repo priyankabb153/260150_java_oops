@@ -55,6 +55,7 @@ public int getFuelCapacity() {
 
 public void setFuelCapacity(int fuelCapacity) {
 	this.fuelCapacity = fuelCapacity;
+	
 }
 
 public int getCc() {
